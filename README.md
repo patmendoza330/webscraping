@@ -28,13 +28,13 @@ Here is Crunchyroll’s page, which has a straightforward alphabetical
 listing of all their titles:
 
 <figure>
-<img src="data/crunchyrollsite.PNG" style="width:50.0%" alt="crunchyroll webpage" /><figcaption aria-hidden="true">crunchyroll webpage</figcaption>
+<img src="data/crunchyrollsite.PNG" style="width:50.0%" alt="crunchyroll webpage" />
 </figure>
 
 And here is HIDIVE’s, which we’ll see later has a bit more information:
 
 <figure>
-<img src="data/hidivive_listing.PNG" style="width:50.0%" alt="hidive webpage" /><figcaption aria-hidden="true">hidive webpage</figcaption>
+<img src="data/hidivive_listing.PNG" style="width:50.0%" alt="hidive webpage" />
 </figure>
 
 In a subsequent post, I’ll ensure I have consistent names across both
@@ -214,7 +214,7 @@ information about the anime including:
 -   data-releasedt
 -   data-nextairdate
 
-![hidive structure](data/hidivestruct.gif)
+![](data/hidivestruct.gif)
 
 Additionally, if we keep expanding those sections, we find that the
 title is housed within “h2” headers.
