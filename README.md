@@ -27,15 +27,11 @@ their anime.
 Here is Crunchyroll’s page, which has a straightforward alphabetical
 listing of all their titles:
 
-<figure>
-<img src="data/crunchyrollsite.PNG" style="width:50.0%" alt="crunchyroll webpage" />
-</figure>
+![](data/crunchyrollsite.PNG)
 
 And here is HIDIVE’s, which we’ll see later has a bit more information:
 
-<figure>
-<img src="data/hidivive_listing.PNG" style="width:50.0%" alt="hidive webpage" />
-</figure>
+![](data/hidivive_listing.PNG)
 
 In a subsequent post, I’ll ensure I have consistent names across both
 these sites as well as MyAnimeList using a string comparison library,
@@ -93,7 +89,7 @@ Although `rvest` is a component of the `tidyverse`, it doesn’t
 automatically load with the library call `tidyverse`, as a result,
 you’ll need to load it separately.
 
-### Scraping the Crunchyroll Title List
+## Scraping the Crunchyroll Title List
 
 The first thing that we want to do is read in the webpage using the
 `read_html` function within the `rvest` library.
@@ -187,7 +183,7 @@ write.csv(df, 'crunchyrolltitles.csv', row.names = FALSE)
 And that’s it! Some webpages are generated with Javascript and require
 more finesse to scrape - this may be covered in a future post.
 
-### Scraping the HIDIVE Title List
+## Scraping the HIDIVE Title List
 
 The first thing that we want to do is read in the webpage using the
 `read_html` function within the `rvest` library.
@@ -222,9 +218,7 @@ title is housed within “h2” headers.
 Lastly, there are div classes of type “div.sfw-badge” that contain
 information on whether the title is an exclusive or dubbed.
 
-<figure>
-<img src="data/hidiveinspect2.PNG" style="width:50.0%" alt="hidive html layout" /><figcaption aria-hidden="true">hidive html layout</figcaption>
-</figure>
+![](data/hidiveinspect2.PNG)
 
 Ok, lets grab the title and date information first:
 
